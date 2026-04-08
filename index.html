@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmação de Presença | Pedro 19 anos</title>
+    <meta
+      name="description"
+      content="Confirme sua presença no aniversário de 19 anos do Pedro."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="convite">
+      <section class="card">
+        <p class="idade">19</p>
+        <p class="anos">ANOS</p>
+        <h1 class="nome">Pedro</h1>
+
+        <p class="sub">Venha comemorar comigo</p>
+        <p class="data">ABR 18 • SÁBADO • 20:00</p>
+        <p class="local">Rua Campos do Jordão, 22 - Condomínio Costa do Sol</p>
+
+        <form id="rsvp-form" class="rsvp-form" novalidate>
+          <h2>Confirmar presença</h2>
+
+          <label for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text" required placeholder="Digite seu nome" />
+
+          <label for="telefone">Telefone (opcional)</label>
+          <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" />
+
+          <input id="confirmacao" name="confirmacao" type="hidden" value="Eu vou" />
+          <p class="presenca-fixa">Presença: <strong>Eu vou</strong></p>
+
+          <label for="mensagem">Mensagem (opcional)</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="3"
+            placeholder="Deixe um recado"
+          ></textarea>
+
+          <button id="submit-btn" type="submit">Confirmar</button>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
